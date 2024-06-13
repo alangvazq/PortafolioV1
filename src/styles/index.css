@@ -69,19 +69,21 @@ body {
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
+
+    padding: 2rem;
 }
 
 #FondoFoto {
-    width: 40%;
-    height: 80%;
+    width: 220px;
+    height: 220px;
     border-radius: 22px;
     background: var(--Photo-gradient);
 }
 
 #txtFoto {
     width: 220px;
-    height: 80%;
-    flex-shrink: 0;
+    height: 220px;
+
 
     display: flex;
     flex-direction: column;
@@ -238,5 +240,10 @@ i {
 @media screen and (max-width: 768px) {
     #navbar ul {
         display: none;
+    }
+
+    #txtFoto{
+        width: auto;
+        margin-top: 2rem;
     }
 }
