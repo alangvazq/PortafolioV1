@@ -98,6 +98,7 @@ body{
 
 #CajaPadre{
     /* margin: 0 500px; */
+    
     display: grid;
     grid-template-rows: 1fr, 1fr;
     grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
@@ -107,20 +108,14 @@ body{
     padding: 3rem;
 }
 
-article{
-    border-radius: 30px;
-    background: var(--dark-box);
-    border: 2px solid var(--dark-box);
-
-    position: relative;
-}
-
 /*TODO Caja con foto */
 
 #CajaFoto{
     grid-column: span 2;
+    min-height: 325px;
 
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
 }
@@ -203,13 +198,25 @@ article{
 /*TODO Caja especializacion */
 
 #CajaEspecializacion{
-    height: 260px;
+    min-height: 260px;
     padding: 2rem;
     grid-column: span 2;
 
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+}
+
+#IconosEspecializacion{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+#IconosEspecializacion i{
+    padding: 1rem;
 }
 
 /*TODO Caja redes */
@@ -221,7 +228,32 @@ article{
     justify-content: space-between;
 }
 
+#IconosRedes{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    margin-top: 1rem;
+    padding: 1rem;
+}
+
 /*TODO Cambios generales */
+article{
+    border-radius: 30px;
+    background: var(--dark-box);
+    border: 2px solid var(--dark-box);
+
+    position: relative;
+}
+
+article:hover{
+    cursor: pointer;
+}
+
+article:hover .active{
+    color:#F9BC2C;
+}
+
 h3{
     font-size: 14px;
     color: #707070;
