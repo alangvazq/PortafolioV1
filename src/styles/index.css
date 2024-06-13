@@ -56,11 +56,204 @@ table {
     --background-light-color: #F1F1F1;
     --font-light-color: #FFEDD9;
     --font-dark-color: #313131;
+    --dark-box: linear-gradient(108deg, #202020 0%, #121212 100%);
+    --Photo-gradient: linear-gradient(135deg, #F74C06 0.09%, #F9BC2C 99.96%);
 }
 
 body{
     font-family: 'Questrial';
     background-color: var(--background-dark-color);
     color: var(--font-light-color);
+
 }
 
+/** Navbar */
+
+#navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    width: 100%;
+}
+
+#logo{
+    font-size: 2rem;
+    text-decoration: none;
+    color: var(--font-light-color);
+}
+
+#navbar ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+}
+
+#navbar ul a{
+    text-decoration: none;
+    color: var(--font-light-color);
+    padding: 0.5rem 1rem;
+}
+
+#CajaPadre{
+    /* margin: 0 500px; */
+    display: grid;
+    grid-template-rows: 1fr, 1fr;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 1.5rem;
+    max-width: calc(260px * 4 + 3rem * 2 + 3rem *2); /* Ajusta el ancho máximo para 4 columnas */
+    margin: auto;
+    padding: 3rem;
+}
+
+article{
+    border-radius: 30px;
+    background: var(--dark-box);
+    border: 2px solid var(--dark-box);
+
+    position: relative;
+}
+
+/*TODO Caja con foto */
+
+#CajaFoto{
+    grid-column: span 2;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#FondoFoto{
+    width: 40%;
+    height: 80%;
+    border-radius: 22px;
+    background: var(--Photo-gradient);
+}
+
+#txtFoto{
+    width: 220px;
+    height: 80%;
+    flex-shrink: 0;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#txtFoto h1{
+    font-size: 40px;
+}
+
+#txtFoto p{
+    font-size: 20px;
+}
+
+/*TODO Caja titulo projecto */
+
+#CajaTituloProjecto{
+    height: 50px;
+    margin-bottom: 1.5rem;
+    display: flex;
+    align-items: center;
+}
+
+#CajaTituloProjecto h2{
+    font-size: 15px;
+    margin-left: 2rem;
+}
+
+/*TODO Caja projecto */
+
+#CajaProjecto{
+    
+    grid-column: span 2;
+}
+
+#CajaProjecto img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+    /*TODO que la imgen se ajuste al tamaño de la caja */
+
+}
+
+#CajaProjectoGaleria{
+    padding: 2rem;
+}
+
+/*TODO Caja Contacto */
+#CajaContacto{
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#CajaContacto h2{
+    font-size: 2.2rem;
+}
+
+#CajaContacto span{
+    color: #F9BC2C;
+}
+
+/*TODO Caja especializacion */
+
+#CajaEspecializacion{
+    height: 260px;
+    padding: 2rem;
+    grid-column: span 2;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/*TODO Caja redes */
+
+#CajaRedes{
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/*TODO Cambios generales */
+h3{
+    font-size: 14px;
+    color: #707070;
+
+    margin-bottom: 1rem;
+}
+
+h2{
+    font-size: 20px;
+
+}
+
+i{
+    font-size: 3rem;
+}
+
+.active{
+    color: #3A3A3A;
+    position: absolute;
+
+    bottom: 1rem;
+    right: 1.5rem;
+    transition: 0.3s ease-in-out;
+}
+
+.active:hover{
+    color: #F9BC2C;
+}
+
+
+@media screen and (max-width: 768px){
+    #navbar ul{
+        display: none;
+    }
+}

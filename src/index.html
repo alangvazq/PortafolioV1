@@ -15,8 +15,8 @@
 </head>
 
 <body>
-    <nav>
-        <a href="">alangvazq</a>
+    <nav id="navbar">
+        <a href="" id="logo">alangvazq</a>
         <ul>
             <li><a href="">Inicio</a></li>
             <li><a href="">Acerca de mí</a></li>
@@ -26,57 +26,61 @@
         <button>¡Hablemos!</button>
     </nav>
     <main>
-        <article>
-            <div></div>
-            <div>
-                <h3>DESARROLLADOR JAVA JUNIOR</h3>
-                <h1>Alan García.</h1>
-                <p>Soy un desarrollador Java úbicado en CDMX.</p>
-                <i class="bi bi-activity"></i>
-            </div>
-        </article>
-        <article>
-            <h2>E-COMMERCE <span>JOYA DEL CARIBE</span></h2>
-        </article>
-        <article>
-            <div>
-                <img src="images/example-project.png" alt="" style="width: 300px;">
-            </div>
-            <div>
-                <h3>GALERÍA</h3>
-                <h2>Mis proyectos</h2>
-                <i class="bi bi-activity"></i>
-            </div>
-        </article>
-        <article>
-            <i class="bi bi-sunglasses"></i>
-            <h2>Trabajemos juntos</h2>
-        </article>
-        <article>
-            <div>
-                <i class="bi bi-front"></i>
-                <i class="bi bi-back"></i>
-                <i class="bi bi-database"></i>
-                <i class="bi bi-ui-checks-grid"></i>
-                <i class="bi bi-body-text"></i>
-            </div>
-            <div>
-                <h3>ESPECIALIZACIÓN</h3>
-                <h2>Soluciones que ofrezco</h2>
-                <i class="bi bi-activity"></i>
-            </div>
-        </article>
-        <article>
-            <div>
-                <i class="bi bi-linkedin"></i>
-                <i class="bi bi-github"></i>
-            </div>
-            <div>
-                <h3>REDES</h3>
-                <h2>Mis perfiles</h2>
-                <i class="bi bi-activity"></i>
-            </div>
-        </article>
+        <section id="CajaPadre">
+            <article id="CajaFoto">
+                <div id="FondoFoto"></div>
+                <div id="txtFoto" style="border: 1px solid red;">
+                    <h3>DESARROLLADOR JAVA JUNIOR</h3>
+                    <h1>Alan <br> García.</h1>
+                    <p>Soy un desarrollador Java úbicado en CDMX.</p>
+                    <div><a href=""><i class="bi bi-activity active"></i></a></div>
+                    
+                </div>
+                
+            </article>
+            <aside id="CajaProjecto">
+                <article id="CajaTituloProjecto">
+                    <h2>E-COMMERCE <span>JOYA DEL CARIBE</span></h2>
+                </article>
+                <article id="CajaProjectoGaleria">
+                    <img src="images/example-project.png" alt="" style="width: 300px;">
+                    <h3>GALERÍA</h3>
+                    <h2>Mis proyectos</h2>
+                    <i class="bi bi-activity active"></i>
+                </article>
+            </aside>
+            <article id="CajaContacto">
+                <i class="bi bi-sunglasses"></i>
+                <h2>Trabajemos <br> <span>juntos</span></h2>
+                <div><i class="bi bi-activity active"></i></div>
+                
+            </article>
+            <article id="CajaEspecializacion">
+                <div>
+                    <i class="bi bi-front"></i>
+                    <i class="bi bi-back"></i>
+                    <i class="bi bi-database"></i>
+                    <i class="bi bi-ui-checks-grid"></i>
+                    <i class="bi bi-body-text"></i>
+                </div>
+                <div>
+                    <h3>ESPECIALIZACIÓN</h3>
+                    <h2>Soluciones que ofrezco</h2>
+                    <i class="bi bi-activity active"></i>
+                </div>
+            </article>
+            <article id="CajaRedes">
+                <div>
+                    <i class="bi bi-linkedin"></i>
+                    <i class="bi bi-github"></i>
+                </div>
+                <div>
+                    <h3>REDES</h3>
+                    <h2>Mis perfiles</h2>
+                    <i class="bi bi-activity active"></i>
+                </div>
+            </article>
+        </section>
     </main>
     <footer>
         <a href="">alangvazq</a>
