@@ -30,41 +30,42 @@
     <main>
         <div id="ContenedorTitulo">
             <h1><i class="bi bi-code"></i> Contacto <i class="bi bi-code"></i></h1>
-            <div class="ContenedorPar">
-                <section class="CajaPar">
-                    <img src="/src/images/example-project.png" alt="">
-                    <h3>Categoria</h3>
-                    <h2>Titulo</h2>
-                </section>
-                <section class="CajaPar">
-                    <img src="/src/images/example-project.png" alt="">
-                    <h3>Categoria</h3>
-                    <h2>Titulo</h2>
-                </section>
-            </div>
-            <div class="ContenedorPar">
-                <section class="CajaPar">
-                    <img src="/src/images/example-project.png" alt="">
-                    <h3>Categoria</h3>
-                    <h2>Titulo</h2>
-                </section>
-                <section class="CajaPar">
-                    <img src="/src/images/example-project.png" alt="">
-                    <h3>Categoria</h3>
-                    <h2>Titulo</h2>
-                </section>
-            </div>
+            <section class="CajaTitulo">
+                <!-- Agregar un form con input para nombre, correo y titulo de mensaje, mensaje y boton para mandar -->
+                <form action="">
+                    <div>
+                        <label for="nombre">Nombre</label>
+                        <input type="text" id="nombre" name="nombre" required>
+                    </div>
+                    <div>
+                        <label for="correo">Correo</label>
+                        <input type="email" id="correo" name="correo" required>
+                    </div>
+                    <div>
+                        <label for="titulo">Titulo</label>
+                        <input type="text" id="titulo" name="titulo" required>
+                    </div>
+                    <div>
+                        <label for="mensaje">Mensaje</label>
+                        <textarea name="mensaje" id="mensaje" cols="30" rows="10" required></textarea>
+                    </div>
+                    <button type="submit" id="boton">Enviar</button>
+                </form>
+            </section>
+        </div>
         </div>
         <div class="ContenedorPar">
             <section class="CajaPar">
-                <img src="/src/images/example-project.png" alt="">
-                <h3>Categoria</h3>
-                <h2>Titulo</h2>
-            </section>
-            <section class="CajaPar" id="CajaLarga">
-                <img src="/src/images/example-project.png" alt="">
-                <h3>Categoria</h3>
-                <h2>Titulo</h2>
+                <div>
+                    <h3>Informacion de Contacto</h3>
+                    <h2><i class="bi bi-envelope"></i> Correo electrónico</h2>
+                    <p>alan.g.vazq@gmail.com</p>
+                </div>
+                <div>
+                    <h3>Ubicación</h3>
+                    <h2><i class="bi bi-geo-alt"></i> Ciudad</h2>
+                    <p>Ciudad de México</p>
+                </div>
             </section>
         </div>
     </main>
