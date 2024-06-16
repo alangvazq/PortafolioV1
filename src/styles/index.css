@@ -215,6 +215,9 @@ i {
     color: #F9BC2C;
 }
 
+img {
+    border-radius: 20px;
+}
 
 @media screen and (max-width: 768px) {
     #CajaPadre {
