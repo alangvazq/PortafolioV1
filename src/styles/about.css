@@ -19,6 +19,12 @@ main{
 
 }
 
+h1 {
+    font-size: 4rem;
+    width: 100%;
+    padding-bottom: 2rem;
+}
+
 /* Card datos */
 
 #CardDatos{
@@ -36,6 +42,10 @@ main{
     align-items: center;
 
     margin: 2rem;
+}
+
+#IconosRedes{
+    padding-bottom: 2rem;
 }
 
 #CardFoto{

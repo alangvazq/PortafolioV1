@@ -65,7 +65,7 @@ main {
 
     position: relative;
 
-    cursor: pointer;
+
 }
 
 .CajaPar:hover .active{
@@ -83,18 +83,23 @@ main {
 } */
 
 h1 {
-    font-size: 5rem;
+    font-size: 4rem;
+    width: 100%;
+    text-align: center;
+    padding-top: 1rem;
 }
 
 h2 {
     font-size: 1.2rem;
-    padding: 1rem;
+    padding-left: 2rem;
+    padding-bottom: 2rem;
 }
 
 h3 {
     font-size: 1rem;
     color: var(--Letras-Tenue, #707070);
-    padding: 1rem;
+    padding-left: 2rem;
+    padding-bottom: 1rem;
 }
 
 .active {
