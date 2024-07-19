@@ -106,6 +106,13 @@ input[type="text"], input[type="email"], textarea {
     border: none;
     border-radius: 4px;
     cursor: pointer;
+    font-family: Questrial;
+    transition: 0.3s all ease-in-out;
+}
+
+#boton:hover {
+    background-color: #F74C06;
+    color: white;
 }
 
 h2 {
